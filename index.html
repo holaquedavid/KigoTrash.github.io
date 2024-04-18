@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestionar Recompensas por Reciclaje</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>¡Recicla y Gana Recompensas!</h1>
+  </header>
+
+  <main>
+    <section class="deposito-basura">
+      <h2>Deposita tu basura</h2>
+      <form action="#">
+        <label for="tipoBasura">Tipo de basura:</label>
+        <select id="tipoBasura" name="tipoBasura">
+          <option value="plastico">Plástico</option>
+          <option value="vidrio">Vidrio</option>
+          <option value="metal">Metal</option>
+          <option value="organico">Orgánico</option>
+          <option value="papel">Papel</option>
+        </select>
+        <br>
+        <label for="cantidadBasura">Cantidad de basura (en kg):</label>
+        <input type="number" id="cantidadBasura" name="cantidadBasura" min="0" required>
+        <br>
+        <button type="submit">Confirmar depósito</button>
+      </form>
+    </section>
+
+    <section class="escanear-qr">
+      <h2>Escanea tu QR</h2>
+      <img src="qr.png" alt="Código QR" id="qrCode">
+      <p>Escanea el código QR para confirmar tu depósito y recibir tus puntos.</p>
+    </section>
+
+    <section class="recompensas">
+      <h2>Tus Recompensas</h2>
+      <ul id="listaRecompensas">
+        </ul>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
