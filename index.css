@@ -1,12 +1,14 @@
 body {
+  background-color: #FF7F50; /* Naranja Kigo */
   font-family: sans-serif;
   margin: 0;
   padding: 0;
+  color: #333; /* Texto negro */
 }
 
 header {
-  background-color: #4CAF50;
-  color: white;
+  background-color: #fff; /* Blanco para el encabezado */
+  color: #333;
   text-align: center;
   padding: 20px 0;
 }
@@ -21,9 +23,6 @@ main {
 
 section {
   margin-bottom: 20px;
-}
-
-.deposito-basura, .escanear-qr, .recompensas {
   border: 1px solid #ccc;
   padding: 20px;
   border-radius: 5px;
