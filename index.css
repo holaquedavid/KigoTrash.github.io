@@ -1,65 +1,93 @@
 body {
-  background-color: #FF7F50; /* Naranja Kigo */
-  font-family: sans-serif;
   margin: 0;
   padding: 0;
-  color: #333; /* Texto negro */
+  background-color: white;
+  font-family: Arial, sans-serif;
 }
 
-header {
-  background-color: #fff; /* Blanco para el encabezado */
-  color: #333;
+.title-container {
   text-align: center;
-  padding: 20px 0;
+  margin-top: 0px;
+  position: relative; /* Necesario para establecer el contexto */
 }
 
-h1 {
-  margin: 0;
+.title-container img {
+  max-width: 40%;
 }
 
-main {
-  padding: 20px;
+/* Estilo para el relleno de fondo */
+.title-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% - 0%); /* Calculamos el ancho restante */
+  height: 100%;
+  background-color: #F25C05; /* Color de relleno */
+  z-index: -1; /* Enviamos el fondo detrás de la imagen */
 }
 
-section {
-  margin-bottom: 20px;
-  border: 1px solid #ccc;
-  padding: 20px;
-  border-radius: 5px;
+.logo-container {
+  text-align: center;
+  margin-top: 20px; /* Espacio entre el contenido y el logo */
 }
 
-label {
-  display: block;
-  margin-bottom: 5px;
+.logo-container img {
+  max-width: 50%; /* Ancho máximo para el logo */
 }
 
-select, input[type="number"] {
-  width: 100%;
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+.text-container {
+  text-align: center;
+  margin-top: 20px; /* Espacio entre el logo y el texto */
 }
 
-button {
-  background-color: #4CAF50;
+.text-container p {
+  color: #110A6A; /* Color del texto */
+  font-size: 18px; /* Tamaño del texto */
+}
+
+.instructions-container {
+  text-align: center;
+  margin-top: 20px; /* Espacio entre el texto anterior y las instrucciones */
+}
+
+.instructions-container .link {
+  color: #F25C05;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.instructions-container .link:hover {
+  text-decoration: underline;
+}
+
+
+.button-container {
+  text-align: center;
+  margin-top: 20px; /* Espacio entre las instrucciones y el botón */
+}
+
+.button {
+  padding: 10px 50px;
+  background-color: #F25C05;
   color: white;
-  padding: 10px 20px;
   border: none;
-  border-radius: 5px;
+  border-radius: 25px;
+  font-size: 16px;
   cursor: pointer;
 }
 
-#qrCode {
-  width: 200px;
-  height: 200px;
-  margin-bottom: 10px;
+.button:hover {
+  background-color: #D44A02; /* Cambiamos el color al pasar el ratón sobre el botón */
 }
 
-#listaRecompensas {
-  list-style: none;
-  padding: 0;
+.link {
+  color: #F25C05; /* Cambiamos el color del texto */
+  text-decoration: none;
+  font-size: 16px;
 }
 
-#listaRecompensas li {
-  margin-bottom: 10px;
+.link:hover {
+  text-decoration: underline;
 }

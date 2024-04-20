@@ -1,49 +1,40 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kigo: Recicla y Gana Recompensas</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-  <header>
-    <h1>               ¡Kigo: Recicla y Gana Recompensas!</h1>
-  </header>
+    <div class="title-container">
+        <img src="https://github.com/holaquedavid/KigoTrash.github.io/blob/main/KigoB.jpeg?raw=true" alt="Título de la página">
+    </div>
+    
+    <div class="content">
+        <!-- Aquí va tu contenido -->
+    </div>
 
-  <main style="text-align: center;">
-    <section class="deposito-basura">
-      <h2>Deposita tu basura</h2>
-      <form action="#">
-        <label for="tipoBasura">Tipo de basura:</label>
-        <select id="tipoBasura" name="tipoBasura">
-          <option value="plastico">Plástico</option>
-          <option value="vidrio">Vidrio</option>
-          <option value="metal">Metal</option>
-          <option value="organico">Orgánico</option>
-          <option value="papel">Papel</option>
-        </select>
-        <br>
-        <label for="cantidadBasura">Cantidad de basura (en kg):</label>
-        <input type="number" id="cantidadBasura" name="cantidadBasura" min="0" required>
-        <br>
-        <button type="submit">Confirmar depósito</button>
-      </form>
-    </section>
+    <div class="logo-container">
+        <img src="https://github.com/holaquedavid/KigoTrash.github.io/blob/main/KigoRLogo.jpeg?raw=true" alt="Logo">
+    </div>
 
-    <section class="escanear-qr">
-      <h2>Escanea tu QR</h2>
-      <img src="qr.png" alt="Código QR" id="qrCode">
-      <p>Escanea el código QR para confirmar tu depósito y recibir tus puntos.</p>
-    </section>
+    <div class="text-container">
+        <p>Deposita tus botellas en la maquina</p>
+    </div>
 
-    <section class="recompensas">
-      <h2>Tus Recompensas</h2>
-      <ul id="listaRecompensas">
-        </ul>
-    </section>
-  </main>
+    <div class="instructions-container">
+        <a href="#instrucciones" class="link">Instrucciones</a>
+    </div>
 
-  <script src="script.js"></script>
+    <div class="button-container">
+        <button class="button">INICIAR</button>
+    </div>
+
+    <div class="button-container">
+        <a href="#resultados" class="link">Ver mis resultados</a>
+    </div>
+
+    <script src="index.js"></script>
 </body>
 </html>
