@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    font-family: Arial, sans-serif;
+}
+
+.title-container {
+    text-align: center;
+    margin-top: 0px;
+    position: relative; /* Necesario para establecer el contexto */
+}
+
+.title-container img {
+    max-width: 40%;
+}
+
+/* Estilo para el relleno de fondo */
+.title-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 0%); /* Calculamos el ancho restante */
+    height: 100%;
+    background-color: #F25C05; /* Color de relleno */
+    z-index: -1; /* Enviamos el fondo detrás de la imagen */
+}
+
+.text-container {
+    text-align: center;
+    margin-top: 100px; /* Espacio entre el logo y el texto */
+}
+
+.text-wrapper {
+    display: inline-block; /* Hace que el contenedor se ajuste al tamaño del contenido */
+    padding: 10px 20px; /* Añade espacio alrededor del texto */
+    background-color: #E0E5FF; /* Color de fondo del rectángulo */
+    border-radius: 10px; /* Añade bordes redondeados al rectángulo */
+}
+
+.text-wrapper p {
+    color: #110A6A; /* Color del texto */
+    font-size: 23px; /* Tamaño del texto */
+    font-weight: bold; /* Hace que el texto sea más ancho sin aumentar el tamaño */
+}
+
+.instructions-container .link:hover {
+    text-decoration: underline;
+}
+
+
+.button-container {
+    text-align: center;
+    margin-top: 200px; /* Espacio entre las instrucciones y el botón */
+}
+
+.button {
+    padding: 10px 50px;
+    background-color: #F25C05;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #D44A02; /* Cambiamos el color al pasar el ratón sobre el botón */
+}
+
+.link {
+    color: #F25C05; /* Cambiamos el color del texto */
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
